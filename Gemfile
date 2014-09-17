@@ -17,11 +17,11 @@ gem 'coffee-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer'
-
 gem 'uglifier'
 
 gem 'twitter-bootstrap-rails', '2.2.8'
 gem "less-rails"
-
-
 gem 'jquery-rails'
+
+gem 'twitter-typeahead-rails'
+gem 'acts-as-taggable-on'
