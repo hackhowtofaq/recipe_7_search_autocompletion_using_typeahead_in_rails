@@ -1,7 +1,7 @@
 <script type="text/javascript" charset="utf-8">
 
 var engine = new Bloodhound({
-  remote: '<%= ajaxGallerySearch_path %>?q=%QUERY',
+  remote: '<%= ajaxSearch_galleries_path %>?q=%QUERY',
   datumTokenizer: function(d) {
     return Bloodhound.tokenizers.whitespace(d.val);
   },
@@ -15,20 +15,21 @@ engine.initialize();
 // instantiate the typeahead UI
 $('input#search').typeahead(
 {
-  highlight: true;
+  highlight: true,
   limit: 10
 },
 {
-  name: "value",
+  //name: 'val',
 
   // `ttAdapter` wraps the suggestion engine in an adapter that
   // is compatible with the typeahead jQuery plugin
   source: engine.ttAdapter(),
-  templates {
-    suggestion: Handlebars.compile('<p>{{value}} {{type}}</p>')
+  templates: {
+    suggestion: Handlebars.compile('<p>{{name}} {{description}}</p>')
   }
 
 }
+
 );
 
 

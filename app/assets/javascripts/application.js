@@ -13,10 +13,11 @@
 
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
+//= require handlebars
 //= require twitter/typeahead
 
 
 //= require pictures
 
 
-//= require twitter/bootstrap

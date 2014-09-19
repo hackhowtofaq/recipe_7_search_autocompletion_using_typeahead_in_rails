@@ -2,9 +2,11 @@ GalleryJqueryFileUpload::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  resources :galleries
+  resources :galleries do
+    get 'ajaxSearch', on: :collection
 
-  get 'ajaxGallerySearch' => 'galleries#ajaxGallerySearch'
+  end
+
 
   resources :pictures
 

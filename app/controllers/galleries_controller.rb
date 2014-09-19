@@ -91,14 +91,14 @@ class GalleriesController < ApplicationController
   end
 
 
-  def ajaxGallerySearch
-    @galleries = Gallery.where("lower(token) LIKE '%#{params[:query]}%'").to_a
+  def ajaxSearch
+    @galleries = Gallery.where("lower(name) LIKE '%#{params[:q]}%'").to_a
 
     arr = @galleries.inject([]) { |acc, s|
       acc.push({
         id: s.id,
-        value: s.name,
-        type: "pou"
+        name: s.name,
+        description: s.description
       })
     }
 
