@@ -98,7 +98,8 @@ class GalleriesController < ApplicationController
       acc.push({
         id: s.id,
         name: s.name,
-        description: s.description
+        description: s.description,
+        image_path: s.pictures.first.image.url
       })
     }
 

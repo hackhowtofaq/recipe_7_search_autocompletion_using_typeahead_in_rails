@@ -25,7 +25,7 @@ $('input#search').typeahead(
   // is compatible with the typeahead jQuery plugin
   source: engine.ttAdapter(),
   templates: {
-    suggestion: Handlebars.compile('<p>{{name}} {{description}}</p>')
+    suggestion: Handlebars.compile('<p><img src="{{image_path}}" height="142" width="142"/> {{name}} {{description}}</p>')
   }
 
 }
