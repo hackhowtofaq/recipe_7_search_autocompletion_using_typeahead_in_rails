@@ -30,7 +30,10 @@ $('input#search').typeahead(
 
 }
 
-);
+).bind("typeahead:selected", function(obj, datum, name) {
+  console.log(obj, datum, name);
+  window.location.href = datum.url;
+});
 
 
 

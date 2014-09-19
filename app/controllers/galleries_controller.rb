@@ -96,6 +96,7 @@ class GalleriesController < ApplicationController
 
     arr = @galleries.inject([]) { |acc, s|
       acc.push({
+        url: gallery_path(s),
         id: s.id,
         name: s.name,
         description: s.description,

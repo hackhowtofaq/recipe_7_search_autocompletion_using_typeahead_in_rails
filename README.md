@@ -1,4 +1,4 @@
-# Rails 3.2.17 + Paperclip + multiple file upload with nested resource 
+# Rails 4 + Paperclip + multiple file upload with nested resource 
 
 http://www.railscook.com/recipes/multiple-files-upload-with-nested-resource-using-paperclip-in-rails/
 
@@ -28,3 +28,6 @@ http://www.railscook.com/recipes/multiple-files-upload-with-nested-resource-usin
 
     http://localhost:3000/galleries
 
+
+
+https://github.com/bassjobsen/typeahead.js-bootstrap-css.git
