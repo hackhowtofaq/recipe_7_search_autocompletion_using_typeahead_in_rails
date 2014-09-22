@@ -31,3 +31,4 @@ http://www.railscook.com/recipes/multiple-files-upload-with-nested-resource-usin
 
 
 https://github.com/bassjobsen/typeahead.js-bootstrap-css.git
+https://github.com/twitter/typeahead.js/issues/300
